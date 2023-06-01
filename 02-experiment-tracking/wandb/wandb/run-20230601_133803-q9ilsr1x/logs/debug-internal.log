@@ -1,0 +1,281 @@
+2023-06-01 13:38:03,716 INFO    StreamThr :17208 [internal.py:wandb_internal():86] W&B internal server running at pid: 17208, started at: 2023-06-01 13:38:03.715253
+2023-06-01 13:38:03,717 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: status
+2023-06-01 13:38:03,723 INFO    WriterThread:17208 [datastore.py:open_for_write():85] open: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\run-q9ilsr1x.wandb
+2023-06-01 13:38:03,723 DEBUG   SenderThread:17208 [sender.py:send():375] send: header
+2023-06-01 13:38:03,761 DEBUG   SenderThread:17208 [sender.py:send():375] send: run
+2023-06-01 13:38:06,188 INFO    SenderThread:17208 [dir_watcher.py:__init__():219] watching files in: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files
+2023-06-01 13:38:06,188 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: check_version
+2023-06-01 13:38:06,188 INFO    SenderThread:17208 [sender.py:_start_run_threads():1124] run started: q9ilsr1x with start time 1685614083.716417
+2023-06-01 13:38:06,188 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: summary_record
+2023-06-01 13:38:06,189 INFO    SenderThread:17208 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-01 13:38:06,189 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: check_version
+2023-06-01 13:38:07,192 INFO    Thread-16 :17208 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\wandb-summary.json
+2023-06-01 13:38:08,890 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: status_report
+2023-06-01 13:38:08,896 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: run_start
+2023-06-01 13:38:09,818 DEBUG   HandlerThread:17208 [system_info.py:__init__():31] System info init
+2023-06-01 13:38:09,818 DEBUG   HandlerThread:17208 [system_info.py:__init__():46] System info init done
+2023-06-01 13:38:09,818 INFO    HandlerThread:17208 [system_monitor.py:start():181] Starting system monitor
+2023-06-01 13:38:09,818 INFO    SystemMonitor:17208 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-01 13:38:09,818 INFO    HandlerThread:17208 [system_monitor.py:probe():201] Collecting system info
+2023-06-01 13:38:09,822 INFO    SystemMonitor:17208 [interfaces.py:start():190] Started cpu monitoring
+2023-06-01 13:38:09,823 INFO    SystemMonitor:17208 [interfaces.py:start():190] Started disk monitoring
+2023-06-01 13:38:09,823 INFO    SystemMonitor:17208 [interfaces.py:start():190] Started gpu monitoring
+2023-06-01 13:38:09,824 INFO    SystemMonitor:17208 [interfaces.py:start():190] Started memory monitoring
+2023-06-01 13:38:09,832 INFO    SystemMonitor:17208 [interfaces.py:start():190] Started network monitoring
+2023-06-01 13:38:09,839 DEBUG   HandlerThread:17208 [system_info.py:probe():195] Probing system
+2023-06-01 13:38:09,840 DEBUG   HandlerThread:17208 [system_info.py:_probe_git():180] Probing git
+2023-06-01 13:38:09,841 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:09,841 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:09,920 DEBUG   HandlerThread:17208 [system_info.py:_probe_git():188] Probing git done
+2023-06-01 13:38:09,920 DEBUG   HandlerThread:17208 [system_info.py:probe():240] Probing system done
+2023-06-01 13:38:09,920 DEBUG   HandlerThread:17208 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.10.11', 'heartbeatAt': '2023-06-01T10:08:09.839827', 'startedAt': '2023-06-01T10:08:03.703715', 'docker': None, 'cuda': None, 'args': ('--wandb_project', 'hamid_test', '--wandb_entity', 'hamidjahani999', '--data_artifact', 'hamidjahani999/hamid_test/NYC-Taxi:v0'), 'state': 'running', 'program': 'C:\\Users\\Hamid Jahani\\Documents\\MLOps-Zoomcamp-Course\\02-experiment-tracking\\Wandb\\sweep.py', 'codePath': '02-experiment-tracking\\Wandb\\sweep.py', 'git': {'remote': 'git@github.com:sheperd007/MLOps-Zoomcamp-Course.git', 'commit': '7c6084acb390feaec46c1927ac1d72877c753587'}, 'email': 'hamidjahani999@gmail.com', 'root': 'C:/Users/Hamid Jahani/Documents/MLOps-Zoomcamp-Course', 'host': 'DESKTOP-M5QEEE3', 'username': 'Hamid Jahani', 'executable': 'C:\\ProgramData\\anaconda3\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2803.0, 'min': 0.0, 'max': 2803.0}, 'cpu_freq_per_core': [{'current': 2803.0, 'min': 0.0, 'max': 2803.0}], 'disk': {'total': 165.78155899047852, 'used': 127.62627792358398}, 'gpu': 'NVIDIA GeForce MX450', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce MX450', 'memory_total': 2147483648}], 'memory': {'total': 15.788383483886719}}
+2023-06-01 13:38:09,920 INFO    HandlerThread:17208 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-01 13:38:09,920 INFO    HandlerThread:17208 [system_monitor.py:probe():214] Publishing system info
+2023-06-01 13:38:09,920 DEBUG   HandlerThread:17208 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-01 13:38:09,921 DEBUG   HandlerThread:17208 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-01 13:38:09,921 DEBUG   HandlerThread:17208 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-06-01 13:38:10,192 INFO    Thread-16 :17208 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\conda-environment.yaml
+2023-06-01 13:38:10,193 INFO    Thread-16 :17208 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\requirements.txt
+2023-06-01 13:38:11,853 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:11,853 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:12,224 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:12,255 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:14,258 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:14,258 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:14,632 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:14,659 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:15,626 DEBUG   HandlerThread:17208 [system_info.py:_save_conda():86] Saving conda packages done
+2023-06-01 13:38:15,628 INFO    HandlerThread:17208 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-01 13:38:15,632 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: status_report
+2023-06-01 13:38:15,632 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-01 13:38:15,633 DEBUG   SenderThread:17208 [sender.py:send():375] send: files
+2023-06-01 13:38:15,633 INFO    SenderThread:17208 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-06-01 13:38:15,643 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-01 13:38:15,644 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: stop_status
+2023-06-01 13:38:16,196 INFO    Thread-16 :17208 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\conda-environment.yaml
+2023-06-01 13:38:16,198 INFO    Thread-16 :17208 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\wandb-metadata.json
+2023-06-01 13:38:16,666 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:16,666 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:17,041 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:17,068 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:17,654 DEBUG   SenderThread:17208 [sender.py:send():375] send: telemetry
+2023-06-01 13:38:18,499 INFO    wandb-upload_0:17208 [upload_job.py:push():137] Uploaded file C:\Users\HAMIDJ~1\AppData\Local\Temp\tmp6a3cnvo4wandb\nuv7cdxg-wandb-metadata.json
+2023-06-01 13:38:19,074 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:19,074 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:19,450 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:19,481 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:19,656 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: status_report
+2023-06-01 13:38:20,384 DEBUG   SenderThread:17208 [sender.py:send():375] send: use_artifact
+2023-06-01 13:38:21,488 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:21,488 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:21,861 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:21,893 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:23,896 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:23,896 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:24,206 INFO    Thread-16 :17208 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\output.log
+2023-06-01 13:38:24,266 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:24,300 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:25,499 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: status_report
+2023-06-01 13:38:26,207 INFO    Thread-16 :17208 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\output.log
+2023-06-01 13:38:26,302 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:26,303 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:26,706 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:26,707 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:28,710 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:28,710 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:29,081 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:29,115 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:30,500 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: status_report
+2023-06-01 13:38:30,639 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-01 13:38:30,640 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: stop_status
+2023-06-01 13:38:31,117 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:31,117 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:31,488 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:31,519 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:33,190 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-01 13:38:33,190 DEBUG   SenderThread:17208 [sender.py:send():375] send: history
+2023-06-01 13:38:33,191 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: summary_record
+2023-06-01 13:38:33,192 INFO    SenderThread:17208 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-01 13:38:33,213 INFO    Thread-16 :17208 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\wandb-summary.json
+2023-06-01 13:38:33,522 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:33,522 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:33,894 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:33,928 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:34,476 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: log_artifact
+2023-06-01 13:38:34,477 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: log_artifact
+2023-06-01 13:38:35,482 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-01 13:38:35,934 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:35,934 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:36,310 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:36,342 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:38,348 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:38,349 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:38,724 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:38,758 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:40,484 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-01 13:38:40,761 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:40,761 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:41,131 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:41,163 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:43,169 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:43,170 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:43,540 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:43,573 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:45,486 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-01 13:38:46,013 ERROR   gpu       :17208 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-06-01 13:38:46,019 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:46,019 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:48,022 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:48,022 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:48,395 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:48,428 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:50,434 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:50,434 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:50,488 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-01 13:38:50,808 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:50,840 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:52,845 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:52,845 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:53,222 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:53,253 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:54,377 INFO    wandb-upload_0:17208 [upload_job.py:push():95] Uploaded file C:\Users\Hamid Jahani\AppData\Local\wandb\wandb\artifacts\staging\tmp3tbfj_wi
+2023-06-01 13:38:55,257 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:55,257 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2023-06-01 13:38:55,490 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-01 13:38:55,629 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:55,661 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:57,102 INFO    SenderThread:17208 [sender.py:send_request_log_artifact():1438] logged artifact q9ilsr1x-model - {'id': 'QXJ0aWZhY3Q6NDczNTQ1NzQ3', 'digest': '08e95b610a839740b421e1e42e27bf80', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjczNDQ4MDY3', 'latestArtifact': None}, 'version': 'latest'}
+2023-06-01 13:38:57,105 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: status_report
+2023-06-01 13:38:57,664 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:57,664 ERROR   gpu       :17208 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-06-01 13:38:59,537 DEBUG   SenderThread:17208 [sender.py:send():375] send: telemetry
+2023-06-01 13:38:59,537 DEBUG   SenderThread:17208 [sender.py:send():375] send: exit
+2023-06-01 13:38:59,537 INFO    SenderThread:17208 [sender.py:send_exit():598] handling exit code: 0
+2023-06-01 13:38:59,537 INFO    SenderThread:17208 [sender.py:send_exit():600] handling runtime: 25
+2023-06-01 13:38:59,539 INFO    SenderThread:17208 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-01 13:38:59,539 INFO    SenderThread:17208 [sender.py:send_exit():606] send defer
+2023-06-01 13:38:59,539 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: poll_exit
+2023-06-01 13:38:59,539 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:38:59,540 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 0
+2023-06-01 13:38:59,540 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:38:59,540 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-06-01 13:38:59,540 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 1
+2023-06-01 13:38:59,540 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:38:59,540 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 1
+2023-06-01 13:38:59,540 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:38:59,540 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-06-01 13:38:59,541 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 2
+2023-06-01 13:38:59,541 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:38:59,541 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 2
+2023-06-01 13:38:59,541 INFO    HandlerThread:17208 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-01 13:38:59,541 INFO    HandlerThread:17208 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-01 13:38:59,547 DEBUG   SystemMonitor:17208 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-01 13:38:59,547 DEBUG   SystemMonitor:17208 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-01 13:38:59,548 INFO    HandlerThread:17208 [interfaces.py:finish():202] Joined disk monitor
+2023-06-01 13:38:59,548 DEBUG   SystemMonitor:17208 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-01 13:38:59,964 ERROR   gpu       :17208 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-06-01 13:38:59,964 INFO    HandlerThread:17208 [interfaces.py:finish():202] Joined gpu monitor
+2023-06-01 13:38:59,964 INFO    HandlerThread:17208 [interfaces.py:finish():202] Joined memory monitor
+2023-06-01 13:38:59,964 INFO    HandlerThread:17208 [interfaces.py:finish():202] Joined network monitor
+2023-06-01 13:38:59,964 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:38:59,965 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-06-01 13:38:59,965 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 3
+2023-06-01 13:38:59,965 DEBUG   SenderThread:17208 [sender.py:send():375] send: stats
+2023-06-01 13:38:59,965 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:38:59,965 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 3
+2023-06-01 13:38:59,965 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:38:59,965 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-06-01 13:38:59,965 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 4
+2023-06-01 13:38:59,965 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:38:59,965 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 4
+2023-06-01 13:38:59,966 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:38:59,966 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-06-01 13:38:59,966 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 5
+2023-06-01 13:38:59,966 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:38:59,966 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 5
+2023-06-01 13:38:59,966 DEBUG   SenderThread:17208 [sender.py:send():375] send: summary
+2023-06-01 13:38:59,967 INFO    SenderThread:17208 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-01 13:38:59,967 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:38:59,967 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-06-01 13:38:59,967 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 6
+2023-06-01 13:38:59,967 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:38:59,967 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 6
+2023-06-01 13:38:59,968 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:38:59,968 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-06-01 13:38:59,970 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: status_report
+2023-06-01 13:39:00,241 INFO    Thread-16 :17208 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\wandb-summary.json
+2023-06-01 13:39:00,242 INFO    Thread-16 :17208 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\config.yaml
+2023-06-01 13:39:00,494 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-01 13:39:01,269 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 7
+2023-06-01 13:39:01,269 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:39:01,269 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 7
+2023-06-01 13:39:01,269 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:39:01,269 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-06-01 13:39:01,572 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 8
+2023-06-01 13:39:01,572 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:39:01,573 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 8
+2023-06-01 13:39:01,573 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:39:01,574 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-06-01 13:39:01,574 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 9
+2023-06-01 13:39:01,574 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:39:01,574 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 9
+2023-06-01 13:39:01,575 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:39:01,575 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-06-01 13:39:01,575 INFO    SenderThread:17208 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-06-01 13:39:02,245 INFO    SenderThread:17208 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\output.log
+2023-06-01 13:39:02,246 INFO    SenderThread:17208 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\config.yaml
+2023-06-01 13:39:02,247 INFO    SenderThread:17208 [dir_watcher.py:finish():395] scan: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files
+2023-06-01 13:39:02,247 INFO    SenderThread:17208 [dir_watcher.py:finish():409] scan save: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\conda-environment.yaml conda-environment.yaml
+2023-06-01 13:39:02,248 INFO    SenderThread:17208 [dir_watcher.py:finish():409] scan save: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\config.yaml config.yaml
+2023-06-01 13:39:02,252 INFO    SenderThread:17208 [dir_watcher.py:finish():409] scan save: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\output.log output.log
+2023-06-01 13:39:02,254 INFO    SenderThread:17208 [dir_watcher.py:finish():409] scan save: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\requirements.txt requirements.txt
+2023-06-01 13:39:02,259 INFO    SenderThread:17208 [dir_watcher.py:finish():409] scan save: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\wandb-metadata.json wandb-metadata.json
+2023-06-01 13:39:02,259 INFO    SenderThread:17208 [dir_watcher.py:finish():409] scan save: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\wandb-summary.json wandb-summary.json
+2023-06-01 13:39:02,262 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 10
+2023-06-01 13:39:02,264 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:39:02,264 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 10
+2023-06-01 13:39:02,266 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:39:02,266 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-06-01 13:39:02,266 INFO    SenderThread:17208 [file_pusher.py:finish():167] shutting down file pusher
+2023-06-01 13:39:04,209 INFO    wandb-upload_1:17208 [upload_job.py:push():137] Uploaded file C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\config.yaml
+2023-06-01 13:39:05,269 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: status_report
+2023-06-01 13:39:05,498 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-01 13:39:06,372 INFO    wandb-upload_0:17208 [upload_job.py:push():137] Uploaded file C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\conda-environment.yaml
+2023-06-01 13:39:07,234 INFO    wandb-upload_3:17208 [upload_job.py:push():137] Uploaded file C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\requirements.txt
+2023-06-01 13:39:07,234 INFO    wandb-upload_2:17208 [upload_job.py:push():137] Uploaded file C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\output.log
+2023-06-01 13:39:08,657 INFO    wandb-upload_4:17208 [upload_job.py:push():137] Uploaded file C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\files\wandb-summary.json
+2023-06-01 13:39:08,860 INFO    Thread-15 (_thread_body):17208 [sender.py:transition_state():626] send defer: 11
+2023-06-01 13:39:08,860 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:39:08,861 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 11
+2023-06-01 13:39:08,862 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:39:08,862 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-06-01 13:39:08,862 INFO    SenderThread:17208 [file_pusher.py:join():172] waiting for file pusher
+2023-06-01 13:39:08,862 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 12
+2023-06-01 13:39:08,863 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:39:08,863 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 12
+2023-06-01 13:39:08,864 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:39:08,864 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-06-01 13:39:09,612 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 13
+2023-06-01 13:39:09,613 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:39:09,613 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 13
+2023-06-01 13:39:09,614 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:39:09,614 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-06-01 13:39:09,614 INFO    SenderThread:17208 [sender.py:transition_state():626] send defer: 14
+2023-06-01 13:39:09,614 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: defer
+2023-06-01 13:39:09,615 INFO    HandlerThread:17208 [handler.py:handle_request_defer():170] handle defer: 14
+2023-06-01 13:39:09,616 DEBUG   SenderThread:17208 [sender.py:send():375] send: final
+2023-06-01 13:39:09,616 DEBUG   SenderThread:17208 [sender.py:send():375] send: footer
+2023-06-01 13:39:09,616 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: defer
+2023-06-01 13:39:09,616 INFO    SenderThread:17208 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-06-01 13:39:09,618 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-01 13:39:09,618 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: server_info
+2023-06-01 13:39:09,618 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: get_summary
+2023-06-01 13:39:09,618 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: sampled_history
+2023-06-01 13:39:09,620 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: poll_exit
+2023-06-01 13:39:09,620 DEBUG   SenderThread:17208 [sender.py:send_request():402] send_request: server_info
+2023-06-01 13:39:10,256 DEBUG   HandlerThread:17208 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-01 13:39:10,258 INFO    HandlerThread:17208 [handler.py:finish():842] shutting down handler
+2023-06-01 13:39:10,620 INFO    WriterThread:17208 [datastore.py:close():298] close: C:\Users\Hamid Jahani\Documents\MLOps-Zoomcamp-Course\02-experiment-tracking\Wandb\wandb\run-20230601_133803-q9ilsr1x\run-q9ilsr1x.wandb
+2023-06-01 13:39:11,256 INFO    SenderThread:17208 [sender.py:finish():1550] shutting down sender
+2023-06-01 13:39:11,256 INFO    SenderThread:17208 [file_pusher.py:finish():167] shutting down file pusher
+2023-06-01 13:39:11,256 INFO    SenderThread:17208 [file_pusher.py:join():172] waiting for file pusher

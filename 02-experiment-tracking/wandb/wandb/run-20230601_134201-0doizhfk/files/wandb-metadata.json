@@ -1,0 +1,57 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-06-01T10:12:06.029949",
+    "startedAt": "2023-06-01T10:12:01.842408",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--wandb_project",
+        "hamid_test",
+        "--wandb_entity",
+        "hamidjahani999",
+        "--data_artifact",
+        "hamidjahani999/hamid_test/NYC-Taxi:v0"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\Hamid Jahani\\Documents\\MLOps-Zoomcamp-Course\\02-experiment-tracking\\Wandb\\sweep.py",
+    "codePath": "02-experiment-tracking\\Wandb\\sweep.py",
+    "git": {
+        "remote": "git@github.com:sheperd007/MLOps-Zoomcamp-Course.git",
+        "commit": "7c6084acb390feaec46c1927ac1d72877c753587"
+    },
+    "email": "hamidjahani999@gmail.com",
+    "root": "C:/Users/Hamid Jahani/Documents/MLOps-Zoomcamp-Course",
+    "host": "DESKTOP-M5QEEE3",
+    "username": "Hamid Jahani",
+    "executable": "C:\\ProgramData\\anaconda3\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2803.0,
+        "min": 0.0,
+        "max": 2803.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2803.0,
+            "min": 0.0,
+            "max": 2803.0
+        }
+    ],
+    "disk": {
+        "total": 165.78155899047852,
+        "used": 127.63199996948242
+    },
+    "gpu": "NVIDIA GeForce MX450",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce MX450",
+            "memory_total": 2147483648
+        }
+    ],
+    "memory": {
+        "total": 15.788383483886719
+    }
+}
