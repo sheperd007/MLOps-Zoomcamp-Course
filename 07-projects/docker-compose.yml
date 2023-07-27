@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  blueprint:
+    image: $CI_REGISTRY/model:latest
+    deploy:
+      mode: replicated
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+      resources:
+        # Hard limit
+        limits:
+          cpus: "5"
+          memory: 5G
+        # Soft limit
+        reservations:
+          cpus: "2"
+          memory: 2G
+      labels:
+        - "traefik.http.routers.model.rule=Host(`ml.snappfood.ir`) && PathPrefix(`/model`)"
+        - "traefik.http.services.model.loadbalancer.server.port=5000"
+        - "traefik.http.middlewares.model-stripprefix.stripprefix.prefixes=/model, /model/"
+        - "traefik.http.routers.model.middlewares=model-stripprefix"
+    command: ["uvicorn", "main:app", "--root-path", "/model", "--host", "0.0.0.0", "--port", "5000", "--proxy-headers"]
+    networks:
+      - traefik
+    environment:
+      # MLflow
+      DB_POSTGRES: ${DB_POSTGRES}
+      S3_Bucket: ${S3_Bucket}
+      MLFLOW_HOST: ${MLFLOW_HOST}
+      PREFECT_API: ${PREFECT_API}
+      EVIDENTLY: ${EVIDENTLY}
+
+
+
+networks:
+  traefik:
+    driver: overlay
+    external: true

@@ -1,0 +1,66 @@
+variables:
+  IMAGE_BLUEPRINT: $CI_REGISTRY/model
+
+before_script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+
+Training Job:
+  stage: .pre
+  before_script:
+    - docker volume create Modeling-job-vol
+    - >
+      docker run -d --rm --name Modeling-job -v Modeling-job-vol:/jobs --network Mlflow
+      -e DB_POSTGRES=$DB_POSTGRES
+      -e S3_BUCKET=$S3_Bucket
+      -e MLFLOW_HOST=$MLFLOW_HOST
+      -e PREFECT_API: $PREFECT_API
+      -e EVIDENTLY: $EVIDENTLY
+      $IMAGE_BLUEPRINT -f /dev/null
+    - docker cp jobs/train-model.py Modeling-job-vol:/jobs/
+  script:
+    - docker exec Modeling-job python /jobs/train-model.py
+  after_script:
+    - docker stop Modeling-job
+    - docker volume rm blueprint-etl-job-vol
+    - >
+      export https_proxy=http://192.168.100.130:8888/ &&
+      export http_proxy=http://192.168.100.130:8888/ &&
+      apk add --update curl && rm -rf /var/cache/apk/*
+    - >
+      curl -X POST "$SKYPE_BOT_URL/chat/grp"
+      -H "accept: application/json" -H "Content-Type: application/json"
+      -d "{\"msg\": \"Notif:\n‌Blueprint ETL job is done at $CI_JOB_STARTED_AT (UTC).\nStatus: $CI_JOB_STATUS\nPipeline source: $CI_PIPELINE_SOURCE\nSee logs on $CI_JOB_URL\"}"
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "main"
+      allow_failure: true
+  tags:
+    # - etl-job
+    - ml-cluster
+
+Build Blueprint:
+  stage: build
+  script:
+    - docker pull $IMAGE_BLUEPRINT:latest || true
+    - docker build --cache-from $IMAGE_BLUEPRINT:latest -f Dockerfile -t $IMAGE_BLUEPRINT:latest .
+    - docker push $IMAGE_BLUEPRINT:latest
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+    - if: $CI_COMMIT_BRANCH == "main"
+  tags:
+    - ml-cluster
+
+Deploy Blueprint:
+  stage: deploy
+  script:
+    - docker stack deploy -c docker-compose.yml --with-registry-auth Covid19
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+    - if: $CI_COMMIT_BRANCH == "main"
+  tags:
+    - ml-cluster
+
+
