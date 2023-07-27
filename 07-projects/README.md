@@ -23,3 +23,13 @@ The successful completion of this project will contribute significantly to the f
 
 Future Scope:
 The project can be extended to include more advanced deep learning architectures, such as attention-based models or transformers. Additionally, continuous improvement through transfer learning on new COVID-19 data can enhance model generalization and accuracy. Collaboration with healthcare organizations can facilitate real-world validation and deployment of the model in clinical settings, potentially leading to significant public health benefits.
+
+# Deployment
+Unfortunately, I didn't have access to any kind of cloud storage and computing system. so I built the Project Top of a Swarm Cluster.
+1. you Need to Lunch a Docker Cluster with Evidently, Prefect, Mlflow, and a Traefik as a reverse proxy and a Gitlab Runner Instance.
+2. you need to register the gitlab runner on gitlab.com and add this repository to gitlab.
+3. you should define variables like EVIDENTLY inside Gitlab variables so that gitlab CI/CD can access them.
+4. run the CI/CD flow. it will deploy the model on Swarm Cluster.
+
+Traefik use case : https://collabnix.com/how-to-use-traefik-v2-as-a-reverse-proxy-for-docker/
+it has been used for deploying multiple projects. just for showing scalability of platform.
